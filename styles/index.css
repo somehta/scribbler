@@ -2,6 +2,8 @@
     background-image: url(../images/background.jpg);
     height: 100%;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 body, html {
@@ -10,13 +12,13 @@ body, html {
     font-family: sans-serif;
   }
 
-  .createPost{
+ /* .createPost{
       flex-direction: column;
-  }
+  } */
 
   .container{
-     padding-top: 15%;
-     padding-left: 40%;
+    align-self: center;
+    margin: auto;
   }
   .primaryBtn{
       background-color:#FFCC00;
@@ -64,8 +66,9 @@ h2.modal-title{
 form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-input {
+input,textarea {
   padding: 2%;
   border: 0;
   background-color: rgba(128, 128, 128, 0.137);
@@ -97,4 +100,23 @@ label {
   margin-top: 20px;
   border: 0;
   cursor: pointer;
+}
+
+form a{
+  color: blue;
+  cursor: pointer;
+}
+
+form p{
+  align-self: center;
+}
+
+#createpostmodal .modal-content{
+  width: 80%;
+}
+
+#createpostmodal .modal-content button.modal-submit-btn{
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
 }

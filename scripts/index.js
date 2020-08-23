@@ -5,7 +5,7 @@ var signupBtn = document.getElementById("signupbtn");
 var signinBtn = document.getElementById("signinbtn");
 
 // Get the modals
-var createPostModal = document.getElementById("createPost");
+var createPostModal = document.getElementById("createpostmodal");
 var signupmodal = document.getElementById("signupmodal");
 var siginmodal = document.getElementById("signinmodal");
 
@@ -13,6 +13,7 @@ var siginmodal = document.getElementById("signinmodal");
 // When the user clicks the button, open the modal 
 createPostBtn.onclick = function() {
     createPostModal.style.display = 'block';
+    createPostModal.closest('div.modal').style.display= 'flex';
   }  
 
 signinBtn.onclick = function() {
@@ -25,7 +26,7 @@ signupBtn.onclick = function() {
   signupmodal.closest('div.modal').style.display= 'flex';
 } 
 
-  document.getElementById("AllPosts").onclick = function(){
+function openBlogList(){
     window.location.href = "./html/bloglist.html";
   }
 
@@ -42,4 +43,10 @@ if (event.target == signupmodal || event.target == createPostModal || event.targ
 
 function modalCloseClick(element) {
   element.closest("div.modal").style.display = "none";
+}
+
+function openSignup(){
+  siginmodal.style.display = 'none';
+  signupmodal.style.display = 'block';
+  signupmodal.closest('div.modal').style.display= 'flex';
 }
