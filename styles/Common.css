@@ -1,0 +1,42 @@
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+div.headerLeft{
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+div.headerRight{
+    width: 80%;
+    margin-top: 10px;
+    margin-right: 8px;
+}
+
+.headerTitle{
+    font-family: 'Montez', cursive; 
+    font-size: 35px;
+    margin: 0;
+}
+
+#subheading{
+    font-family: 'Ubuntu Mono';
+    font-size: 20px;
+}
+
+.btn{
+    border:none;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 15px 32px;
+    text-align: center;
+}
+
+.btn-right{
+    float: right;
+}
