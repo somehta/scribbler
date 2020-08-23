@@ -18,12 +18,13 @@ div.headerRight{
 .headerTitle{
     font-family: 'Montez', cursive; 
     font-size: 35px;
+    color: blue;
     margin: 0;
 }
 
 #subheading{
-    font-family: 'Ubuntu Mono';
-    font-size: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 15px;
 }
 
 .btn{

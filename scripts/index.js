@@ -27,7 +27,7 @@ signupBtn.onclick = function() {
 } 
 
 function openBlogList(){
-    window.location.href = "./html/bloglist.html";
+    window.location.href = "./html/postslist.html";
   }
 
   // When the user clicks anywhere outside of the modal, close it
