@@ -4,13 +4,15 @@ body{
 
 .post-list{
     display: flex;
-    column-count: 2;
+    flex-wrap: wrap;
 }
 
 .card-post{
     display: flex;
     justify-content: center;
-    margin: 2%;
+    width: 46%;
+    margin: auto;
+    margin-top: 2%;
 }
 
 .card-post:hover{
